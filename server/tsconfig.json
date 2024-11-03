@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2016",                       /* This is fine, but you can bump it to ES2020 if needed. */
+    "module": "commonjs",                      /* Use commonjs for Node.js modules */
+    "rootDir": "./src",                        /* Specifies where your TypeScript source files are located. */
+    "outDir": "./build",                       /* Output compiled files to the build directory. */
+    "esModuleInterop": true,                   /* Enables better interoperability between CommonJS and ES modules. */
+    "forceConsistentCasingInFileNames": true,  /* Ensure file imports follow case sensitivity. */
+    "strict": true,                            /* Enable all strict type-checking options. */
+    "skipLibCheck": true,                      /* Skip checking types of libraries. Often helps avoid third-party type conflicts. */
+
+    /* Modules */
+    "moduleResolution": "node",                /* Use Node.js module resolution strategy. 'node10' is outdated, use 'node'. */
+    "resolveJsonModule": true,                 /* Enable importing JSON files directly. */
+
+    /* Type Checking */
+    "noImplicitAny": true,                     /* Raise errors on variables with implicit `any` type. */
+    "strictNullChecks": true,                  /* Enable strict null checks to catch more errors. */
+    "noImplicitReturns": true,                 /* Ensure all functions return a value. */
+    "noFallthroughCasesInSwitch": true,        /* Avoid fall-through behavior in switch statements. */
+    
+    /* Imports and Helpers */
+    "allowSyntheticDefaultImports": true,      /* Allow default imports from modules with no default export. */
+    "importHelpers": true,                     /* Use helper functions like `__extends` from tslib to save space. */
+    
+    /* Interop Constraints */
+    "isolatedModules": true                    /* Ensure that each file can be safely transpiled without relying on other imports. */
+  },
+  "include": [
+    "./src/**/*"                               /* Include all TypeScript files in the `src` directory. */
+  ],
+  "exclude": [
+    "node_modules",                            /* Exclude node_modules to avoid unnecessary checks. */
+    "build"                                    /* Exclude the output folder. */
+  ]
+}
